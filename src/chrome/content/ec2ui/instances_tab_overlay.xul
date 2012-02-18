@@ -16,26 +16,26 @@
           <menuitem oncommand="ec2ui_InstancesTreeView.tag(event);"
             label="&ec2ui.addTag.label;" />
           <menuseparator />
-          <menu label="Instance Lifecycle">
+          <menu label="&ec2ui.instances.lifecycle.label;">
             <menupopup>
               <menuitem id="instances.context.start"
                 oncommand="ec2ui_InstancesTreeView.startInstance();"
-                label="Start" />
+                label="&ec2ui.instances.lifecycle.start.label;" />
               <menuitem oncommand="ec2ui_InstancesTreeView.rebootInstance();"
-                label="Reboot" />
+                label="&ec2ui.instances.lifecycle.reboot.label;" />
               <menuitem id="instances.context.stop"
                 oncommand="ec2ui_InstancesTreeView.stopInstance();"
-                label="Stop" />
+                label="&ec2ui.instances.lifecycle.stop.label;" />
               <menuitem id="instances.context.forceStop"
                 oncommand="ec2ui_InstancesTreeView.forceStopInstance();"
-                label="Force Stop" />
+                label="&ec2ui.instances.lifecycle.forcestop.label;" />
               <menuitem oncommand="ec2ui_InstancesTreeView.terminateInstance();"
-                label="Terminate" style="color:red; font-weight:bold;"/>
+                label="&ec2ui.instances.lifecycle.terminate.label;" style="color:red; font-weight:bold;"/>
             </menupopup>
           </menu>
           <menuitem id="instances.context.changeInstanceType"
             oncommand="ec2ui_InstancesTreeView.changeInstanceType();"
-            label="Change Instance Type" />
+            label="&ec2ui.instances.lifecycle.changetype.label;" />
           <menuseparator />
           <menuitem oncommand="ec2ui_InstancesTreeView.launchMore();"
             label="&ec2ui.instances.contextmenu.launchmore.label;" />
@@ -59,14 +59,14 @@
             oncommand="ec2ui_InstancesTreeView.getAdminPassword(false);"
             label="&ec2ui.instances.contextmenu.password.label;" />
           <menuseparator />
-          <menu label="Termination Protection">
+          <menu label="&ec2ui.instances.termprotection.label;">
             <menupopup>
               <menuitem id="instances.context.showTerminationProtection"
                 oncommand="ec2ui_InstancesTreeView.showTerminationProtection();"
-                label="Show Termination Protection" />
+                label="&ec2ui.instances.showtermprotection.label;" />
               <menuitem id="instances.context.changeTerminationProtection"
                 oncommand="ec2ui_InstancesTreeView.changeTerminationProtection();"
-                label="Change Termination Protection" />
+                label="&ec2ui.instances.changetermprotection.label;" />
             </menupopup>
           </menu>
           <menuseparator />
@@ -75,13 +75,13 @@
               <menuitem oncommand="ec2ui_InstancesTreeView.copyToClipBoard('id');"
                 label="&ec2ui.instances.contextmenu.copyid.label;" />
               <menuitem oncommand="ec2ui_InstancesTreeView.copyToClipBoard('publicDnsName');"
-                label="Public DNS Name" />
+                label="&ec2ui.instances.contextmenu.copypublic.label;" />
               <menuitem oncommand="ec2ui_InstancesTreeView.copyToClipBoard('privateDnsName');"
-                label="Private DNS Name" />
+                label="&ec2ui.instances.contextmenu.copyprivate.label;" />
               <menuitem oncommand="ec2ui_InstancesTreeView.copyToClipBoard('privateip');"
-                label="Private IP Address" />
+                label="&ec2ui.instances.contextmenu.copyprivateip.label;" />
               <menuitem oncommand="ec2ui_InstancesTreeView.copyToClipBoard('publicip');"
-                label="Public IP Address" />
+                label="&ec2ui.instances.contextmenu.copypublicip.label;" />
             </menupopup>
           </menu>
           <menuseparator />

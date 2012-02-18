@@ -140,11 +140,11 @@
       <popupset >
           <menupopup id="certificate.tree.contextmenu"  onpopupshowing="ec2ui_LoadbalancerTreeView.enableOrDisableItems(event);">
               <menuitem oncommand="ec2ui_ServerCertificateTreeView.viewDetails(event);"
-                label="View Details" />
+                label="&ec2ui.upload.certificate.view.label;" />
               <menuitem oncommand="ec2ui_ServerCertificateTreeView.copyToClipBoard('Arn');"
-                label="Copy Certificate URL" />
+                label="&ec2ui.upload.certificate.copyurl.label;" />
               <menuitem oncommand="ec2ui_ServerCertificateTreeView.deleteServerCertificate()"
-                label="Delete Certificate" />
+                label="&ec2ui.upload.certificate.delete.label;" />
           </menupopup>
       </popupset>
       <toolbar style="padding: 0px 3px; -moz-box-align: center">
@@ -152,9 +152,9 @@
           <toolbarbutton image="images/refresh.png" oncommand="ec2ui_ServerCertificateTreeView.refresh()"
           tooltiptext="&ec2ui.refresh.tip;" />
           <toolbarbutton image="images/createvol.png" oncommand="ec2ui_ServerCertificateTreeView.openServerCertAddWindow()"
-              style="-moz-box-pack:center;" tooltiptext="Upload Certificate" />
+              style="-moz-box-pack:center;" tooltiptext="&ec2ui.certificate.upload.tip;" />
           <toolbarbutton image="images/delete.png" oncommand="ec2ui_ServerCertificateTreeView.deleteServerCertificate()"
-              style="-moz-box-pack:center;" tooltiptext="Delete Uploaded Certificate" />          
+              style="-moz-box-pack:center;" tooltiptext="&ec2ui.certificate.delete.tip;" />          
         </hbox>
       </toolbar>
       <tree id="ec2ui.servercertificate.view" seltype="single" ondblclick="ec2ui_ServerCertificateTreeView.viewDetails(event)" enableColumnDrag="true" flex="1">

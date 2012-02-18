@@ -8,7 +8,7 @@ var XpiInstaller = {
     extShortName: 'ec2ui', // The leafname of the JAR file (without the .jar part)
     extVersion: '__VERSION__.__BUILD__',
     extAuthor: 'Manoj Mehta',
-    extLocaleNames: ['en-US'],
+    extLocaleNames: ['zh-CN'],
     extLicenseFile : 'LICENSE.TXT',
     extSkinNames: ['classic'], // e.g. ['classic', 'modern']
     extPostInstallMessage: 'Success! Please restart your browser to finish the installation.', // Set to null for no post-install message
